@@ -1,5 +1,8 @@
 {{$NEXT}}
 
+0.005     Oct 25 2019
+        * restore Class::Method::Modifiers prereq dropped by Dist::Zilla switch
+
 0.004     Oct 24 2019
 	* pod cleanups and update git repository info
 
