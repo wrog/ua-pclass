@@ -1,10 +1,8 @@
 package Mojo::UserAgent::Role::PromiseClass;
 
-# ABSTRACT: Specify the Mojo::Promise class used by Mojo::UserAgent
+# ABSTRACT: Choose the Mojo::Promise class used by Mojo::UserAgent
 
 use Mojo::Base -role;
-
-our $VERSION = '0.004';
 
 has promise_class => sub { 'Mojo::Promise' };
 
