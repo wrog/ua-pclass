@@ -1,5 +1,8 @@
 {{$NEXT}}
 
+0.004     Oct 24 2019
+	* pod cleanups and update git repository info
+
 0.003     Oct 02 2019
         * added Role::Tiny and Class::Method::Modifiers prereqs
 
