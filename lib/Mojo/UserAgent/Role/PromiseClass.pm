@@ -29,17 +29,17 @@ __END__
 
 =head1 NAME
 
-Mojo::UserAgent::Role::PromiseClass - Choose the Promise class used by Mojo::UserAgent
+Mojo::UserAgent::Role::PromiseClass - Choose the promise class used by Mojo::UserAgent
 
 =head1 SYNOPSIS
 
-  $ua = Mojo::UserAgent->new(...)
-        ->with_roles('+PromiseClass')
-        ->promise_roles('+Repeat');  # add promise features you want
+  $ua = Mojo::UserAgent->new(...)->with_roles('+PromiseClass');
 
-  $ua->get_p('http://example.com')
-     ->repeat(sub{...});  # and they show up on every get_p call
+  # add promise features you want
+  $ua->promise_roles('+Repeat');
 
+  # and they show up on every request promise
+  $ua->get_p('http://example.com')->repeat(sub{...});
 
 =head1 DESCRIPTION
 
