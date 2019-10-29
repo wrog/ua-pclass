@@ -4,12 +4,12 @@ package Mojo::Base::Role::PromiseClass;
 
 use Mojo::Base -role;
 
-has promise_class => sub { 'Mojo::Promise' };
+has promise_class => sub {'Mojo::Promise'};
 
 sub promise_roles {
-    my $self = shift;
+    my $self   = shift;
     my $pclass = $self->promise_class;
-    my @roles =
+    my @roles  =
       grep { !Role::Tiny::does_role($pclass, $_) }
       map  { /^\+(.+)$/ ? "Mojo::Promise::Role::$1" : $_ }
       @_;
