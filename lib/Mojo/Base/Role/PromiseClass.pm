@@ -13,7 +13,7 @@ sub promise_roles {
       grep { !Role::Tiny::does_role($pclass, $_) }
       map  { /^\+(.+)$/ ? "Mojo::Promise::Role::$1" : $_ }
       @_;
-    $self->promise_class($pclass->with_roles(@roles)) if @roles || !@_;
+    $self->promise_class($pclass->with_roles(@roles)) if @roles;
     return $self;
 }
 
