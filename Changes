@@ -1,4 +1,6 @@
 {{$NEXT}}
+
+0.008     Feb 04 2020
 	* promise_roles now allows empty list (closes issue #1)
 
 0.007     Oct 29 2019
