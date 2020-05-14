@@ -58,7 +58,7 @@ This role only provides methods to access and manipulate the promise_class; it d
 
 =head1 ATTRIBUTES
 
-L<Mojo::UserAgent::Role::PromiseClass> implements the following attributes.
+L<Mojo::Base::Role::PromiseClass> implements the following attributes.
 
 =head2 promise_class
 
@@ -69,7 +69,7 @@ Get or set the C<$object>'s preferred promise class.
 
 =head1 METHODS
 
-L<Mojo::UserAgent::Role::PromiseClass> supplies the following methods:
+L<Mojo::Base::Role::PromiseClass> supplies the following methods:
 
 =head2 promise_roles
 
